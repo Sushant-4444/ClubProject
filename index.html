@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Secretarial Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom_fonts.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">CSC</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Schedule_Page/index.html">About</a></li>
+            <li class="dropdown"><a href="../index.html#keynote-speaker-container">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                    <a href="#service3">Service 4</a>
+                    <a href="#service3">Service 5</a>
+                    <a href="#service3">Service 6</a>
+                    <a href="#service3">Service 7</a>
+                    <a href="#service3">Service 8</a>
+                </div>
+            </li>
+
+            <li><a href="../Contact_Page/index.html">Gallery</a></li>
+            <li><a href="../Meet_the_team_page/index.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <header class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop class="hero-video">
+            <source src="Assets/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Opacity Layer -->
+        <div class="opacity-layer"></div>
+
+        <!-- Content Overlay -->
+        <div class="hero-content">
+            <h1><span class="cursive">Welcome to</span> <span style="color: #EB5939; text-transform: uppercase; font-weight: 900;">Central Secretarial Club</span></h1>
+            <p>Established in 1919</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+    <div class="marquee-container">
+        <div class="marquee-content" style="text-transform: uppercase;font-weight: 900;">
+            <p >Join us for our annual conference on October 15-17, 2021</p>
+            <p style = 'color:#EB5939'>Join us for our annual conference on October 15-17, 2021</p>
+            <p>Join us for our annual conference on October 15-17, 2021</p>
+            <p style = 'color:#EB5939'>Join us for our annual conference on October 15-17, 2021</p>
+        </div>
+    </div>
+    <section class="about">
+        <div class="about-content">
+            <h1 style="text-transform: uppercase; color:#EB5939; font-weight: 900; font-size:8vh;">About Us</h1>
+            <p style="font-size: 3vh; line-height: 1.4;">The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals. We provide resources, networking opportunities, and educational programs to help our members thrive in their careers.</p>            
+            <!-- Button for more details -->
+            <a href="#services" class="btn about-btn">About More</a>
+        </div>
+    </section>
+    
+
+    <section class="services" id="services">
+        <h2 style = 'text-transform: uppercase;font-weight: 900; font-size:8vh'>Our Services</h2>
+        <div class="service-container">
+            <div class="service-item">
+                <img src="Assets/Services-images/Bar & Restaurant.jpg" alt="Bar & Restaurant" class="service-pic">
+                <h3>Bar & Restaurant</h3>
+                <p>Enjoy our exclusive bar and restaurant with a variety of cuisines and beverages.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Free Yoga Sessions.jpg" alt="Free Yoga Sessions" class="service-pic">
+                <h3>Free Yoga Sessions</h3>
+                <p>05:00 PM to 06:00 PM – Monday to Friday</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Reading – cum – Library Room.jpg" alt="Reading – cum – Library Room" class="service-pic">
+                <h3>Reading – cum – Library Room</h3>
+                <p>A quiet place to read and access a wide range of books and resources.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Billiards Tables.jpg" alt="Billiards Tables" class="service-pic">
+                <h3>Billiards Tables</h3>
+                <p>Enjoy a game of billiards with friends and fellow members.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Table Tennis.jpg" alt="Table Tennis" class="service-pic">
+                <h3>Table Tennis</h3>
+                <p>Challenge your friends to a game of table tennis.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Badminton Court.jpg" alt="Badminton Court" class="service-pic">
+                <h3>Badminton Court</h3>
+                <p>Currently undergoing maintenance.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Carrom Board.jpg" alt="Carrom Board" class="service-pic">
+                <h3>Carrom Board</h3>
+                <p>Enjoy a game of carrom with fellow members.</p>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Services-images/Card Games.jpg" alt="Card Games" class="service-pic">
+                <h3>Card Games</h3>
+                <p>Participate in various card games and tournaments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Schedule_Page/index.html">About</a></li>
+                <li><a href="../index.html#keynote-speaker-container">Services</a></li>
+                <li><a href="../Contact_Page/index.html">Gallery</a></li>
+                <li><a href="../Meet_the_team_page/index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: info@csc.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 CSC Street, City, Country</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Central Secretarial Club. All rights reserved.</p>
+    </div>
+</footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const bars = document.querySelectorAll('.bar');
+    
+            // Toggle between hide and visible classes
+            navLinks.classList.toggle('hide');
+            navLinks.classList.toggle('visible');
+    
+            // Toggle the hamburger animation (open/close)
+            bars.forEach(bar => {
+                bar.classList.toggle('open');
+            });
+        }
+
+
+    </script>
+    
+</body>
+</html>
