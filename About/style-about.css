@@ -1,0 +1,24 @@
+.about, .history, .mission, .vision {
+    padding: 2rem;
+    /* background-color: #f4f4f4; */
+    text-align: center;
+    color: #fff;
+}
+
+.about{
+    margin-top: 4vh;
+}
+
+.about h1, .history h2, .mission h2, .vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #EB5939;
+}
+
+.about p, .history p, .mission p, .vision p {
+    font-size: 1rem;
+    /* color: #666; */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+

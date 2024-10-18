@@ -1,0 +1,51 @@
+/* Service Detail Section Styles */
+.service-detail {
+    padding: 2rem;
+    /* background-color: #f4f4f4; */
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.service-detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #EB5939;
+}
+
+.service-detail-pic {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.service-detail p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+.BackToHome{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #EB5939;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-bottom: 1vh;
+}
+.BackToHome a{
+    color: #fff;
+    text-decoration: none;
+}

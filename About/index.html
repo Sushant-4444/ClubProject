@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Secretarial Club</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../custom_fonts.css">
+    <link rel="stylesheet" href="style-about.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">CSC</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown"><a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                    <a href="#service3">Service 4</a>
+                    <a href="#service3">Service 5</a>
+                    <a href="#service3">Service 6</a>
+                    <a href="#service3">Service 7</a>
+                    <a href="#service3">Service 8</a>
+                </div>
+            </li>
+
+            <li><a href="/Gallery/index.html">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+
+     <!-- About Section -->
+     <section class="about">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals. We provide resources, networking opportunities, and educational programs to help our members thrive in their careers.</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="history-content">
+            <h2>Our History</h2>
+            <p>Since its inception in 1919, the Central Secretarial Club has been dedicated to supporting secretarial professionals. Over the decades, we have grown into a vibrant community that offers a wide range of resources and opportunities for professional development.</p>
+            <p>Our club has a rich history of organizing events, workshops, and seminars that cater to the evolving needs of our members. We take pride in our legacy and continue to build on it by adapting to the changing landscape of the secretarial profession.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower secretarial professionals by providing them with the tools, resources, and support they need to excel in their careers. We are committed to fostering a sense of community and promoting continuous learning and professional development.</p>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+        <div class="vision-content">
+            <h2>Our Vision</h2>
+            <p>Our vision is to be the leading organization for secretarial professionals, recognized for our commitment to excellence, innovation, and community building. We strive to create an inclusive environment where members can thrive and achieve their full potential.</p>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Schedule_Page/index.html">About</a></li>
+                <li><a href="../index.html#keynote-speaker-container">Services</a></li>
+                <li><a href="../Contact_Page/index.html">Gallery</a></li>
+                <li><a href="../Meet_the_team_page/index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: info@csc.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 CSC Street, City, Country</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Central Secretarial Club. All rights reserved.</p>
+    </div>
+</footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const bars = document.querySelectorAll('.bar');
+    
+            // Toggle between hide and visible classes
+            navLinks.classList.toggle('hide');
+            navLinks.classList.toggle('visible');
+    
+            // Toggle the hamburger animation (open/close)
+            bars.forEach(bar => {
+                bar.classList.toggle('open');
+            });
+        }
+
+
+    </script>
+    
+</body>
+</html>
