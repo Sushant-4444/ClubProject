@@ -1,7 +1,6 @@
 /* Service Detail Section Styles */
 .service-detail {
     padding: 2rem;
-    /* background-color: #f4f4f4; */
     text-align: center;
     margin-top: 8vh;
 }
@@ -12,6 +11,8 @@
 }
 
 .service-detail h1 {
+    text-transform: uppercase;
+    font-weight: 900;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #EB5939;
@@ -34,16 +35,21 @@
 
 .BackToHome{
     display: block;
-    width: 100px;
+    width: 10vw;
     margin: 0 auto;
     padding: 0.5rem 1rem;
     background-color: #EB5939;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    margin-bottom: 1vh;
+    border-radius: 100px;
+    transition: background 0.3s;
+    margin-bottom: 10vh;
+}
+
+.BackToHome:hover{
+    background: #333;
+    color: #EB5939;
 }
 .BackToHome a{
     color: #fff;

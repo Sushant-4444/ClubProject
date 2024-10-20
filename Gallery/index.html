@@ -7,148 +7,135 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../custom_fonts.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add this CSS directly or in your style.css */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0,0.1); /* Adjust opacity */
+            transition: background 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+        }
+
+        .gallery-item p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: #fff;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover p {
+            opacity: 1; /* Show text on hover */
+        }
+    </style>
 </head>
 <body>
    <!-- Navbar Section -->
    <nav class="navbar">
-    <div class="logo">CSC</div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../About/index.html">About</a></li>
-        <li class="dropdown"><a href="#">Services</a>
-            <div class="dropdown-content">
-                <a href="#service1">Service 1</a>
-                <a href="#service2">Service 2</a>
-                <a href="#service3">Service 3</a>
-                <a href="#service3">Service 4</a>
-                <a href="#service3">Service 5</a>
-                <a href="#service3">Service 6</a>
-                <a href="#service3">Service 7</a>
-                <a href="#service3">Service 8</a>
-            </div>
-        </li>
-
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-</nav>
+        <div class="logo">CSC</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/index.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                    <a href="#service4">Service 4</a>
+                    <a href="#service5">Service 5</a>
+                    <a href="#service6">Service 6</a>
+                    <a href="#service7">Service 7</a>
+                    <a href="#service8">Service 8</a>
+                </div>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
     <!-- Gallery Section -->
     <section class="gallery">
         <div class="gallery-top">
-        <div class="heading-club"><h2>Club Highlights</h2></div>
+            <div class="oooverlay"></div>
+            <div class="heading-club"><h2>Club Highlights</h2></div>
         </div>
         <div class="gallery-container">
             <div class="gallery-item">
                 <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
+                <div class="overlay"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
             </div>
             <div class="gallery-item">
                 <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
+                <div class="overlay"></div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
             </div>
             <div class="gallery-item">
                 <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
+                <div class="overlay"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
             </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Badminton Court.jpg" alt="Highlight 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatum laborum earum sed, numquam dicta officia officiis corrupti alias nesciunt, unde nihil error delectus ipsam! Distinctio harum vel a ea?</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Bar & Restaurant.jpg" alt="Highlight 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas atque esse expedita ab dolorum laudantium quae amet asperiores. Optio unde sit reiciendis. Repellendus nulla reprehenderit, iusto aperiam accusantium nihil ea!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="../Assets/Services-images/Billiards Tables.jpg" alt="Highlight 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ducimus accusamus consequatur et consectetur perferendis repudiandae ipsum a minus accusantium ipsa dolorem nam doloremque ut, alias commodi? Tempore, ad?</p>
-            </div>
-            <!-- Add more gallery items as needed -->
+            <!-- Repeat as needed -->
         </div>
     </section>
     
-     <!-- Footer Section -->
-<div class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>About Us</h3>
-            <p>The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals.</p>
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>The Central Secretarial Club (CSC) was established in 1919 to foster a sense of community and support among secretarial professionals.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Schedule_Page/index.html">About</a></li>
+                    <li><a href="../index.html#keynote-speaker-container">Services</a></li>
+                    <li><a href="../Contact_Page/index.html">Gallery</a></li>
+                    <li><a href="../Meet_the_team_page/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@csc.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 CSC Street, City, Country</p>
+            </div>
         </div>
-        <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Schedule_Page/index.html">About</a></li>
-                <li><a href="../index.html#keynote-speaker-container">Services</a></li>
-                <li><a href="../Contact_Page/index.html">Gallery</a></li>
-                <li><a href="../Meet_the_team_page/index.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>Email: info@csc.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Address: 123 CSC Street, City, Country</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Central Secretarial Club. All rights reserved.</p>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Central Secretarial Club. All rights reserved.</p>
-    </div>
-</div>
+    
     <script>
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');

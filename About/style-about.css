@@ -1,24 +1,96 @@
+body {
+    margin: 0;
+    background-color: #000000; /* Dark background color */
+    /* font-family: 'Arial', sans-serif; A clean, modern font */
+}
+
 .about, .history, .mission, .vision {
-    padding: 2rem;
-    /* background-color: #f4f4f4; */
     text-align: center;
     color: #fff;
+    position: relative;
+    padding: 3rem 1rem; /* Consistent padding */
+    margin: 2vh 0; /* Consistent vertical spacing */
 }
 
-.about{
-    margin-top: 4vh;
+.about {
+    background-image: url('./bg.jpg'); /* Make sure the image path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow */
+    position: relative;
 }
 
-.about h1, .history h2, .mission h2, .vision h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Slightly darker overlay */
+    z-index: 0; /* Place behind content */
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px; /* Limits width to ensure centering */
+    width: 100%;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem; /* Adjusted margin */
     color: #EB5939;
+    text-transform: uppercase;
+    font-weight: 900; /* Adjusted font weight for better readability */
 }
 
-.about p, .history p, .mission p, .vision p {
-    font-size: 1rem;
-    /* color: #666; */
+.about p {
+    font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin: 1rem auto; /* Centered paragraph */
+    max-width: 800px; /* Reduce max-width for paragraph text */
 }
 
+.history, .mission, .vision {
+    background-color: rgba(20, 20, 20, 0.9); /* Subtle dark background for sections */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}
+
+.history h2, .mission h2, .vision h2 {
+    font-size: 3rem; /* Slightly smaller for better proportion */
+    margin-bottom: 1rem; /* Adjusted bottom margin */
+    margin-top: 1rem; /* Adjusted top margin */
+    color: #EB5939;
+    text-transform: uppercase;
+    font-weight: 900; /* Adjusted font weight for better readability */
+}
+
+.history p, .mission p, .vision p {
+    font-size: 1.1rem; /* Slightly smaller for readability */
+    line-height: 1.6;
+    margin: 0.5rem auto; /* Centered paragraph with less margin */
+    max-width: 800px; /* Reduce max-width for paragraph text */
+}
+
+@media (max-width: 768px) {
+    .about h1, .history h2, .mission h2, .vision h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .about p, .history p, .mission p, .vision p {
+        font-size: 1rem; /* Adjust font size for readability */
+        max-width: 90%; /* Allow paragraphs to take up more space on smaller screens */
+    }
+
+    .about {
+        height: auto; /* Allows for flexibility in height */
+        min-height: 40vh; /* Minimum height to keep the section visible */
+    }
+}
