@@ -19,8 +19,9 @@
 }
 
 .service-detail-pic {
-    width: 100%;
+    width: 20vw;
     max-width: 600px;
+    min-width: 250px;
     border-radius: 8px;
     margin-bottom: 1.5rem;
 }
@@ -36,6 +37,7 @@
 .BackToHome{
     display: block;
     width: 10vw;
+    min-width: 200px;
     margin: 0 auto;
     padding: 0.5rem 1rem;
     background-color: #EB5939;
