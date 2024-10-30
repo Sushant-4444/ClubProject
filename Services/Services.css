@@ -1,4 +1,11 @@
 /* Service Detail Section Styles */
+
+body {
+    margin: 0;
+    background-color: #fff; /* Dark background color */
+    /* font-family: 'Arial', sans-serif; A clean, modern font */
+}
+
 .service-detail {
     padding: 2rem;
     text-align: center;
@@ -28,7 +35,7 @@
 
 .service-detail p {
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     line-height: 1.6;
     margin-bottom: 1rem;
 }

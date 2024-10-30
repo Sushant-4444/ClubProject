@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif; /* Apply Roboto as the overall font */
     line-height: 1.6;
-    background-color: #000;
+    background-color: #fff;
 }
 
 /* Navbar Styles */
@@ -28,7 +28,7 @@ body {
 }
 
 .navbar .logo {
-    color: #fff;
+    color: #FFF;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar .nav-links a {
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
     font-weight: normal;
     transition: all ease 0.2s;
@@ -110,7 +110,7 @@ body {
 .hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     margin: 3px 0;
     transition: 0.3s ease;
 }
@@ -130,17 +130,21 @@ body {
 
 /* Hero Section */
 .hero {
+    background-image: url('./bgimg.jpg'); 
+    background-size: cover;
+    background-position: center;
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #000;
     overflow: hidden;
+    background-color: #fff;
 }
 
-.hero-video {
+/* .hero-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -148,17 +152,17 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 1;
-}
-
+} */
+/* 
 .opacity-layer {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* 70% opacity */
+    background: rgba(0, 0, 0, 0.7); 
     z-index: 2;
-}
+} */
 
 .hero-content {
     position: relative;
@@ -181,8 +185,8 @@ body {
 }
 
 .btn {
-    background: #fff;
-    color: #333;
+    background-color: #000;
+    color: #fff;
     padding: 1rem 2rem;
     text-decoration: none;
     font-weight: bold;
@@ -226,15 +230,19 @@ body {
 }
 
 .about {
-    padding: 2rem;
-    background-color: #030303; /* Light background for contrast */
-    color: #fff;
+    /* height: 100vh; */
+    padding: 5rem;
+    background-color: #FFF; /* Light background for contrast */
+    color: #000;
+    display: flex;
 }
 
 .about-content {
     max-width: 800px; /* Maximum width for content */
-    margin: 0 auto; /* Center content */
+    margin: 0 auto; /*Center content*/
     text-align: center; /* Centered text */
+    justify-content: center;
+    align-items: center;
 }
 
 .about h1 {
@@ -271,7 +279,7 @@ body {
 .services {
     padding: 2rem;
     text-align: center;
-    background:#000
+    background:#fff
 }
 
 .services h2 {
@@ -288,7 +296,7 @@ body {
 }
 
 .service-item {
-    background-color: #eeeeee;
+    background-color: #2b2b2b;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -310,12 +318,12 @@ body {
 
 .service-item p {
     font-size: 1rem;
-    color: #666;
+    color: #f0f0f0;
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #333;
+    background-color: #181818;
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
